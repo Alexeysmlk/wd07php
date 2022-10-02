@@ -5,7 +5,7 @@
 echo "<strong>1. Изменить регистр строки на противоположный </strong> <br><br>";
 
 // Указать исходную строчку
-$text = "переделать строчку! второе предложение! третье предложение! вау!";
+$text = "это тест строчек. тут я поставлю вопрос? зачем? не знаю.";
 
 echo "Исходная строка: ".$text."<br>";
 
@@ -59,3 +59,27 @@ $english = ['a','b','v','g','d','e','yo','j','z','i','y','k','l','m','n','o','p'
 
 $translit = str_ireplace($russian, $english, $text);
 echo "Полученная строка: \"$translit\"";
+
+// Задача 5.
+
+echo "<br><br>";
+echo "<strong>5. Вывести таблицу умножения</strong><br><br>";
+
+// Указать строку в таблице умножения
+$number_first = 20;
+
+// Указать столбик в таблице умножения
+$number_second = 20;
+
+// Формирование таблицы умножения
+echo '<table style="border: 1px solid black; border-collapse: collapse; text-align: center">';
+
+for ($i=1; $i<=$number_first; $i++) {
+    echo '<tr>';
+    for ($j=1; $j<=$number_second; $j++) {
+        echo '<td style="border: 1px solid grey; height: 30px; width: 40px;">'.$i*$j.'</td>';
+    }
+    echo '</tr>';
+}
+
+echo '</table>';
