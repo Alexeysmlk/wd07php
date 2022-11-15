@@ -4,7 +4,9 @@
 namespace App\Models;
 
 
-class Post
+use App\Core\BaseModel;
+
+class Post extends BaseModel
 {
 
 }

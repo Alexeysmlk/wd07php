@@ -4,7 +4,9 @@
 namespace App\Models;
 
 
-class User
+use App\Core\BaseModel;
+
+class User extends BaseModel
 {
 
 }
